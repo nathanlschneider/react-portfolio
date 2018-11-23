@@ -1,0 +1,18 @@
+// colors
+$dark-gold: #8e793e;
+$light-gold: #ad974f;
+$dark-grey: #231f20;
+$light-grey: #eaeaea;
+$background-color: #232323;
+
+// variables
+$animationTime: 1s;
+$delayTime: 300ms;
+$translate: 15px;
+$navHeight: 50px;
+
+//typography
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+* {
+    font-family: 'Roboto', serif;
+}

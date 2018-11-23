@@ -1,0 +1,182 @@
+@import '../../../../Utils/colors';
+
+.logoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 60px;
+}
+
+.logo {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    z-index: 4;
+    background-image: url(./n4svg.svg);
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background-color: yellow;
+    //position: fixed;
+}
+
+.cover {
+    width: 108px;
+    height: 45px;
+    background-color: $light-grey;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    height: 42px;
+    width: 2px;
+    margin: 10px;
+    z-index: 10;
+    // background-color: blue;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    // background-color: pink;
+}
+
+.name span {
+    // background-color: green;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.bar {
+    width: 2px;
+    //height: 45px;
+    background-color: #000000;
+}
+
+.lineFold {
+    animation: $animationTime $delayTime lineFold;
+    animation-fill-mode: both;
+}
+
+.lineUnFold {
+    animation: $animationTime $delayTime lineUnFold;
+    animation-fill-mode: forwards;
+}
+
+.slideInAndDelay {
+    animation: $animationTime 1.2s slideIn;
+    animation-fill-mode: both;
+}
+
+.slideOut {
+    animation: $animationTime slideOut;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lineFold {
+    100% {
+        transform: translateX(0px);
+        width: 2px;
+    }
+
+    80% {
+        transform: translateX(0px);
+        width: 2px;
+        height: 30px;
+    }
+    60% {
+        transform: translateX($translate);
+        width: 2px;
+        height: 30px;
+    }
+
+    20% {
+        transform: translateX($translate) rotate(90deg);
+        width: 2px;
+        height: 30px;
+    }
+
+    0% {
+        transform: translateX($translate) rotate(90deg);
+        width: 16px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+@keyframes lineUnFold {
+    0% {
+        transform: translateX(0px);
+        width: 2px;
+    }
+
+    40% {
+        transform: translateX(0px);
+        width: 2px;
+        height: 30px;
+    }
+    60% {
+        transform: translateX($translate);
+        width: 2px;
+        height: 30px;
+    }
+
+    80% {
+        transform: translateX($translate) rotate(90deg);
+        width: 2px;
+        height: 30px;
+    }
+
+    100% {
+        transform: translateX($translate) rotate(90deg);
+        width: 16px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-150px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-150px);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
