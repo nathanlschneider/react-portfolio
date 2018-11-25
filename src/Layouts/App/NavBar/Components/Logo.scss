@@ -1,6 +1,6 @@
 @import '../../../../Utils/colors';
 
-.logoWrapper {
+.logo-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,6 @@
     background-size: cover; /* <------ */
     background-repeat: no-repeat;
     background-position: center center;
-    // background-color: yellow;
-    //position: fixed;
 }
 
 .cover {
@@ -40,15 +38,10 @@
     // background-color: blue;
 }
 
-.name {
+.logo-name {
     display: flex;
     flex-direction: column;
     z-index: 2;
-    // background-color: pink;
-}
-
-.name span {
-    // background-color: green;
     font-size: 18px;
     letter-spacing: 2px;
 }

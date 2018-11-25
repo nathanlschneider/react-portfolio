@@ -11,6 +11,10 @@ export default class Welcome extends Component {
                     <SVGComponent className="svg-logo" fill="#ad974f" />
                     <div className="name">Nathan Schneider</div>
                     <div className="title">Web Developer</div>
+                    <div className="down-arrow">
+                        <div className="left-bar" />
+                        <div className="right-bar" />
+                    </div>
                 </div>
             </div>
         );

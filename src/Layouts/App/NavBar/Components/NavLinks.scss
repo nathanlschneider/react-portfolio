@@ -1,6 +1,6 @@
 @import '../../../../Utils/colors';
 
-.container {
+.link-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,5 +8,11 @@
     div {
         margin: 0 10px 0 10px;
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .link-container {
+        display: none;
     }
 }

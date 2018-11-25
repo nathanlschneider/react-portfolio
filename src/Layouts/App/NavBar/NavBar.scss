@@ -1,18 +1,18 @@
 @import '../../../Utils/colors';
 
 nav {
-    position: fixed;
+    align-items: center;
+    background-color: $light-grey;
+    color: $dark-grey;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    background-color: $light-grey;
-    color: $dark-grey;
     max-height: 50px;
     min-height: 50px;
-    width: 100%;
-    user-select: none;
     overflow: hidden;
+    position: fixed;
+    user-select: none;
+    width: 100%;
     z-index: 5;
 }

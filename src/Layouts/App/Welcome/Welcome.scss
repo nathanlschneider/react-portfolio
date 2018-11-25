@@ -6,39 +6,78 @@
 }
 
 .backdrop {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    opacity: 0.1;
     background-image: url(./photo-1522252234503-e356532cafd5.jpeg);
     background-size: cover;
+    height: 100vh;
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
 }
 
 .greeting {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    position: absolute;
     height: 100vh;
+    position: absolute;
     width: 100%;
     z-index: 3;
 
     .svg-logo {
-        margin-bottom: 110px;
+        margin-bottom: 50px;
+        opacity: 0.8;
     }
 
     .name {
+        color: darken($light-grey, 40%);
         font-size: 72px;
         font-weight: 300;
         letter-spacing: 10px;
-        color: darken($light-grey, 40%);
     }
 
     .title {
-        letter-spacing: 10px;
-        font-size: 142px;
-        font-weight: 800;
         color: $light-grey;
+        font-size: 126px;
+        font-weight: 800;
+        letter-spacing: 10px;
+    }
+
+    .down-arrow {
+        bottom: 150px;
+        display: flex;
+        position: absolute;
+
+        .left-bar {
+            background-color: $dark-gold;
+            height: 8px;
+            transform: rotate(45deg) translateX(17px);
+            width: 65px;
+        }
+        .right-bar {
+            background-color: $light-gold;
+            height: 8px;
+            transform: rotate(-45deg) translateX(-17px);
+            width: 65px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .greeting {
+        .name {
+            text-align: center;
+            color: darken($light-grey, 40%);
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 10px;
+        }
+
+        .title {
+            color: $light-grey;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 10px;
+        }
     }
 }
