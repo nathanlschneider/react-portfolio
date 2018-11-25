@@ -8,8 +8,8 @@ export default class Logo extends Component {
         let line = document.querySelector('.line');
         let name = document.querySelector('.name');
         let firstLoad = true;
-        window.addEventListener('scroll', e => {
-            console.log(window.scrollY);
+
+        window.addEventListener('scroll', () => {
             if (window.scrollY < 900 && firstLoad === false) {
                 line.classList.add('lineFold');
                 line.classList.remove('lineUnFold');

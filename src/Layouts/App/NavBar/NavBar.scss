@@ -3,6 +3,7 @@
 nav {
     position: fixed;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -12,4 +13,6 @@ nav {
     min-height: 50px;
     width: 100%;
     user-select: none;
+    overflow: hidden;
+    z-index: 5;
 }
