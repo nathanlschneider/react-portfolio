@@ -29,14 +29,14 @@
         opacity: 0.8;
     }
 
-    .name {
+    .greeting-name {
         color: darken($light-grey, 40%);
         font-size: 72px;
         font-weight: 300;
         letter-spacing: 10px;
     }
 
-    .title {
+    .greeting-title {
         color: $light-grey;
         font-size: 126px;
         font-weight: 800;
@@ -44,7 +44,7 @@
     }
 
     .down-arrow {
-        bottom: 150px;
+        bottom: 10%;
         display: flex;
         position: absolute;
 
@@ -65,19 +65,40 @@
 
 @media only screen and (max-width: 1000px) {
     .greeting {
-        .name {
-            text-align: center;
+        text-align: center;
+
+        .greeting-name {
             color: darken($light-grey, 40%);
             font-size: 32px;
             font-weight: 300;
-            letter-spacing: 10px;
+            letter-spacing: 8px;
         }
 
-        .title {
+        .greeting-title {
+            color: $light-grey;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .greeting {
+        text-align: center;
+
+        .greeting-name {
+            color: darken($light-grey, 40%);
+            font-size: 26px;
+            font-weight: 300;
+            letter-spacing: 6px;
+        }
+
+        .greeting-title {
             color: $light-grey;
             font-size: 26px;
             font-weight: 800;
-            letter-spacing: 10px;
+            letter-spacing: 6px;
         }
     }
 }
