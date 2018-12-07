@@ -1,7 +1,7 @@
 @import '../../../Utils/colors';
 
 .main-container {
-    height: 100vh;
+    height: calc(100vh + 50px);
     width: 100%;
 }
 
